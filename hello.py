@@ -15,9 +15,6 @@ students09211 = [
     "Нургалиев Анвар Камилевич"
 ]
 
-print(students09211)
-
-
 students09212 = [
     "Орлова Эльза",
     "Росихин Тимур",
@@ -36,9 +33,6 @@ students09212 = [
     "Мухамметзянов Сулейман"
 ]
 
-print(students09212)
-
-print()
 students09213 = [
     "Бабаджанов Камолджон",
     "Веткин Даниил",
@@ -56,4 +50,19 @@ students09213 = [
     "Кадылская Анастасия (ШЕФ)"
 ]
 
-print(students09213)
+# Создание словарей
+dict_students09211 = {f"Студент_{idx+1}": student for idx, student in enumerate(students09211)}
+dict_students09212 = {f"Студент_{idx+1}": student for idx, student in enumerate(students09212)}
+dict_students09213 = {f"Студент_{idx+1}": student for idx, student in enumerate(students09213)}
+
+# Вывод результатов
+print("Словарь студентов группы 09-21:")
+print(dict_students09211)
+print()
+
+print("Словарь студентов группы 09-22:")
+print(dict_students09212)
+print()
+
+print("Словарь студентов группы 09-23:")
+print(dict_students09213)
